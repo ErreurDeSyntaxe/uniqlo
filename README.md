@@ -55,7 +55,7 @@ This section serves as both a checklist and roadmap.
 
 #### 🧠 Planning
 
-- [ ] User stories
+- [x] User stories
 - [ ] Features
 - [ ] Flowchart
 - [ ] Architecture
@@ -112,7 +112,19 @@ This section serves as both a checklist and roadmap.
 
 ## 👥 User Stories
 
-- As a user, I want...
+- As a user, I want to navigate from any page to any page (home, shop, cart)
+- As a user, I want to see the products clearly
+- As a user, I want to input how many of an item I want right on the product card
+- As a user, I want to click buttons to increase or decrease the quantity
+- As a user, I want to add/remove any item to/from my cart
+- As a user, I want to clear my whole cart with one click
+- As a user, I want to add 1 item by default
+- As a user, I want to see how many items are in my cart from the cart icon
+- As a user, I want to have feedback when adding an item
+- As a user, I want to see the total price of my cart when on the cart page
+- As a user, I want to see a loading indicator
+- As a user, I want to see an error message if adding fails
+- As a user, I want to search items by name
 
 ---
 
@@ -128,12 +140,15 @@ Page Loads → ...
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Components
 
-```js
-class App {
-  greet() {
-    console.log('Hello!');
-  }
-}
-```
+- App
+- Store
+- Loading Spinner
+- Cart
+- Cart Item
+- Product Card
+- Navigation Bar
+- Header
+- Footer
+- Error Message
