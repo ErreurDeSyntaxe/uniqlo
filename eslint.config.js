@@ -28,6 +28,7 @@ export default defineConfig([
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
       ...react.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
     },
   },
 ]);
