@@ -34,6 +34,7 @@ This project’s goal is to **learn React Router, Data Fetching and React Testin
   <img src="./README/js-logo.svg" alt="JavaScript Logo" width="40" height="40">
   <img src="./README/react-logo.svg" alt="React Logo" width="40" height="40">
   <img src="./README/vite-logo.svg" alt="Vite Logo" width="40" height="40">
+  <img src="./README/vitest-logo.svg" alt="Vite Logo" width="40" height="40">
 </p>
 
 ---
