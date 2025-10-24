@@ -60,33 +60,77 @@ This section serves as both a checklist and roadmap.
 - [x] Flowchart
 - [x] Components List
 - [x] UI Design / Sketch
+- [x] Development Steps
 
 #### 💻 Development Steps
 
-- [ ] **Basic HTML**
-  - [ ] Title & Meta
-  - [ ] Structure
-  - [ ] Favicons
-- [ ] **Parcel Setup**
-  - [ ] Initialize project
-  - [ ] Install Parcel (`npm i -D parcel`)
-  - [ ] Install optimizers (`npm i -D @parcel/optimizer-terser @parcel/optimizer-cssnano @parcel/optimizer-htmlnano`)
-  - [ ] Add scripts
-- [ ] **Vitest Setup**
-  - [ ] Install Vitest (`npm i vitest -D`)
-  - [ ] Add `"test": "vitest --run --reporter verbose"` and `"test:watch": "vitest"` scripts
-- [ ] **Logic & UI**
-  - [ ] Console-based logic
-  - [ ] Refined UI & layout
-  - [ ] Menu / Navigation
-- [ ] **Responsive Design**
-  - [ ] Responsive images (Art direction)
-  - [ ] Media queries
-  - [ ] Mobile menu
-- [ ] **Accessibility & Optimization**
-  - [ ] Check accessibility
-  - [ ] Optimize images
-  - [ ] Run Lighthouse
+- [x] **Project Setup**
+
+  - [x] Create React project with Vite
+  - [x] Install dependencies (React Router, etc.)
+  - [x] Create folder structure (components, pages, assets, contexts)
+  - [x] Add global CSS file and import it in main.jsx
+
+- [ ] **Layout & Navigation**
+
+  - [ ] Create Navigation Bar component
+  - [ ] Create Header and Footer components
+  - [ ] Implement routing (Home, Shop, Cart)
+  - [ ] Add cart item count to navigation bar
+
+- [ ] **Home Page**
+
+  - [ ] Add placeholder hero image or banner
+  - [ ] Add welcome message / introduction text
+
+- [ ] **Shop Page**
+
+  - [ ] Fetch products from FakeStore API
+  - [ ] Create Loading Spinner component
+  - [ ] Create Error Message component
+  - [ ] Create Product Card component
+    - [ ] Show product image, title, price
+    - [ ] Add quantity input with + / - buttons
+    - [ ] Add "Add to Cart" button
+  - [ ] Create SearchBar component
+    - [ ] Filter products by name in real time
+  - [ ] Handle adding items to cart and updating cart count
+
+- [ ] **Cart Page**
+
+  - [ ] Create Cart component
+    - [ ] Display all items in the cart
+    - [ ] Show quantities, individual price, total price
+    - [ ] Allow increment/decrement of quantities
+    - [ ] Allow removing individual items
+    - [ ] Add "Clear Cart" button
+  - [ ] Update cart state in real time
+
+- [ ] **State Management**
+
+  - [ ] Set up global state using useReducer / context API
+  - [ ] Handle adding/removing items and quantity changes
+  - [ ] Persist cart state across page navigation
+
+- [ ] **Styling**
+
+  - [ ] Create CSS Modules for components
+  - [ ] Apply custom fonts (Inter / Rubik) via global.css
+  - [ ] Style navigation bar, buttons, product cards, and cart
+  - [ ] Add responsive styles for desktop and mobile
+
+- [ ] **User Feedback & UX**
+
+  - [ ] Show loading spinner while fetching products
+  - [ ] Show error message if API fails
+  - [ ] Show confirmation/visual feedback when adding to cart
+
+- [ ] **Testing & Optimization**
+  - [ ] Test navigation between pages
+  - [ ] Test cart functionality (add, remove, clear, update quantities)
+  - [ ] Test search functionality
+  - [ ] Check mobile responsiveness
+  - [ ] Run basic accessibility checks
 
 #### 🚀 Deployment (Git + GitHub Pages)
 
