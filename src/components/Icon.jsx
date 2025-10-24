@@ -1,7 +1,7 @@
 import styles from './Icon.module.css';
 
 import HomeIcon from './icons/general/home.svg';
-import StoreIcon from './icons/general/store.svg';
+import ShoppingIcon from './icons/general/shopping.svg';
 import ItemAddedIcon from './icons/general/item-added.svg';
 
 import CartEmpty from './icons/cart/cart-empty.svg';
@@ -19,7 +19,7 @@ import Cart9plusItem from './icons/cart/cart-9plus.svg';
 
 const icons = {
   home: HomeIcon,
-  store: StoreIcon,
+  shopping: ShoppingIcon,
   itemAdded: ItemAddedIcon,
   cartEmpty: CartEmpty,
   cartFull: CartFull,

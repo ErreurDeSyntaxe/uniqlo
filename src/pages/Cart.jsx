@@ -1,5 +1,7 @@
+import styles from './Cart.module.css';
+
 function Cart() {
-  return <div>Cart</div>;
+  return <div className={styles.cart}>Cart</div>;
 }
 
 export default Cart;

@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import Icon from './Icon';
 import styles from './NavBar.module.css';
 
@@ -6,13 +7,19 @@ function NavBar() {
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         <li>
-          <Icon icon={'home'} alt={'Home icon'} />
+          <Link to="/">
+            <Icon icon={'home'} alt={'Home icon'} />
+          </Link>
         </li>
         <li>
-          <Icon icon={'store'} alt={'Store icon'} />
+          <Link to="/shopping">
+            <Icon icon={'shopping'} alt={'Shopping icon'} />
+          </Link>
         </li>
         <li>
-          <Icon icon={'cartEmpty'} alt={'Cart icon'} />
+          <Link to="/cart">
+            <Icon icon={'cartEmpty'} alt={'Cart icon'} />
+          </Link>
         </li>
       </ul>
     </nav>
