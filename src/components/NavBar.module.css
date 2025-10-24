@@ -1,0 +1,12 @@
+.nav {
+  background-color: yellow;
+  padding: 1rem;
+}
+
+.navList {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
