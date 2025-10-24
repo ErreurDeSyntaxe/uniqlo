@@ -56,10 +56,10 @@ This section serves as both a checklist and roadmap.
 #### 🧠 Planning
 
 - [x] User stories
-- [ ] Features
-- [ ] Flowchart
-- [ ] Architecture
-- [ ] UI Design / Sketch
+- [x] Features
+- [x] Flowchart
+- [x] Components List
+- [x] UI Design / Sketch
 
 #### 💻 Development Steps
 
@@ -198,3 +198,55 @@ Navigation Flow
 - Product Card
 - Footer
 - Error Message
+
+---
+
+## UI Mock-Up
+
+### Home Page
+
+```
++--------------------------------------------------------------+
+| 🛍️ MyShop [Home] [Shop] [Cart (3)] |
++--------------------------------------------------------------+
+
+[ Hero Image or Welcome Message ]
+
+| 🏠 Home Page                                                |
+| ----------------------------------------------------------- |
+| Welcome to MyShop!                                          |
+| Browse our selection of products in the Shop page.          |
+| ----------------------------------------------------------- |
+
+[ Footer © 2025 MyShop ]
+```
+
+### Shop Page
+
+```
++--------------------------------------------------------------+
+| 🛍️ MyShop [Home] [Shop] [Cart (2)] |
++--------------------------------------------------------------+
+| 🔍 Search: [_____________] |
++--------------------------------------------------------------+
+| [🧴 Product 1] [👕 Product 2] [🎧 Product 3] [📚 Product 4] |
+| Price: $12.99 Price: $24.99 Price: $59.99 Price: $9.99 |
+| [ - ] [ 1 ] [ + ] [Add] [ - ] [ 1 ] [ + ] [Add] ... |
++--------------------------------------------------------------+
+| ✅ Product added! |
+[ Footer © 2025 MyShop ]
+```
+
+### Cart Page
+
+```
++--------------------------------------------------------------+
+| 🛍️ MyShop [Home] [Shop] [Cart (2)] |
++--------------------------------------------------------------+
+| Product Qty Price Total |
+| ----------------------------------------------------------- |
+| 👕 Product 2 2 24.99 49.98 [ - ] [ + ] [x] |
+| 🎧 Product 3 1 59.99 59.99 [ - ] [ + ] [x] |
+| ----------------------------------------------------------- |
+| Total: $109.97 [Clear Cart]
+```
