@@ -130,13 +130,58 @@ This section serves as both a checklist and roadmap.
 
 ## 🧩 Features
 
-- Users can...
+- Users can **navigate seamlessly** between the Home, Shop, and Cart pages using a persistent navigation bar.
+- Users can **browse products clearly** displayed with images, titles, and prices fetched from the FakeStore API.
+- Users can **select quantities easily** with both manual input fields and increment/decrement buttons.
+- Users can **add and remove items** from the cart at any time, with real-time updates to cart contents and totals.
+- Users can **clear the entire cart** in one click using the “Clear Cart” button.
+- Users can **add 1 item by default** when adding a new product to the cart for quick and simple additions.
+- Users can **see a live cart counter** in the navigation bar that updates instantly as items are added or removed.
+- Users receive **visual feedback** (such as alerts or animations) when an item has been added to the cart.
+- Users can **view a detailed cart summary** showing itemized products, quantities, and a running total price.
+- Users see a **loading spinner** while products are being fetched from the API.
+- Users see an **error message** if fetching or adding items fails.
+- Users can **search products by name** directly from the Shop page.
 
 ---
 
 ## 🧭 Flowchart
 
-Page Loads → ...
+Page Loads  
+→ App component renders  
+→ Navigation Bar and Footer appear on all pages  
+→ User lands on **Home Page** by default
+
+Home Page  
+→ User can click **Shop** or **Cart** in the navigation bar  
+→ Clicking **Shop** navigates to Shop Page
+
+Shop Page  
+→ Loading Spinner appears while fetching products from FakeStore API  
+→ If fetch succeeds → Product Cards render  
+→ If fetch fails → Error Message displays  
+→ Each Product Card shows image, title, price, and quantity controls  
+→ User types or adjusts quantity (+ / –)  
+→ User clicks **Add to Cart**  
+→ Cart state updates (via useReducer)  
+→ Cart icon in Navigation Bar updates count in real time  
+→ Success feedback appears (e.g., toast message)
+
+Cart Page  
+→ Displays all items currently in the cart  
+→ User can increase/decrease quantities or remove items  
+→ User can click **Clear Cart** to remove all items  
+→ Total price recalculates automatically  
+→ Cart icon count updates instantly
+
+Search Flow  
+→ User types into **Search Bar** on Shop Page  
+→ Product list filters in real time by matching product names  
+→ Clearing the search input restores the full product list
+
+Navigation Flow  
+→ Navigation Bar allows switching between Home, Shop, and Cart at any time  
+→ State (cart contents, search query) persists across pages during the session
 
 ---
 
@@ -144,11 +189,12 @@ Page Loads → ...
 
 - App
 - Store
+- Header
+- Navigation Bar
+- Search Bar
 - Loading Spinner
 - Cart
 - Cart Item
 - Product Card
-- Navigation Bar
-- Header
 - Footer
 - Error Message
