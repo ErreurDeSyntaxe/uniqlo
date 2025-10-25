@@ -71,59 +71,60 @@ This section serves as both a checklist and roadmap.
   - [x] Create folder structure (components, pages, assets, contexts)
   - [x] Add global CSS file and import it in main.jsx
 
-- [ ] **Layout & Navigation**
+- [x] **Layout & Navigation**
 
-  - [ ] Create Navigation Bar component
-  - [ ] Create Header and Footer components
-  - [ ] Implement routing (Home, Shop, Cart)
-  - [ ] Add cart item count to navigation bar
+  - [x] Create Navigation Bar component
+  - [x] Create Header and Footer components
+  - [x] Implement routing (Home, Shop, Cart)
+  - [x] Add cart item count to navigation bar
 
-- [ ] **Home Page**
+- [x] **Home Page**
 
-  - [ ] Add placeholder hero image or banner
-  - [ ] Add welcome message / introduction text
+  - [x] Add placeholder hero image or banner
+  - [x] Add welcome message / introduction text
+  - [x] Add previously browsed items
 
-- [ ] **Shop Page**
+- [x] **Shop Page**
 
-  - [ ] Fetch products from FakeStore API
-  - [ ] Create Loading Spinner component
-  - [ ] Create Error Message component
-  - [ ] Create Product Card component
-    - [ ] Show product image, title, price
-    - [ ] Add quantity input with + / - buttons
-    - [ ] Add "Add to Cart" button
-  - [ ] Create SearchBar component
-    - [ ] Filter products by name in real time
-  - [ ] Handle adding items to cart and updating cart count
+  - [x] Fetch products from FakeStore API
+  - [x] Create Loading Spinner component
+  - [x] Create Error Message component
+  - [x] Create Product Card component
+    - [x] Show product image, title, price
+    - [x] Add quantity input with + / - buttons
+    - [x] Add "Add to Cart" button
+  - [x] Create SearchBar component
+    - [x] Filter products by name in real time
+  - [x] Handle adding items to cart and updating cart count
 
-- [ ] **Cart Page**
+- [x] **Cart Page**
 
-  - [ ] Create Cart component
-    - [ ] Display all items in the cart
-    - [ ] Show quantities, individual price, total price
-    - [ ] Allow increment/decrement of quantities
-    - [ ] Allow removing individual items
-    - [ ] Add "Clear Cart" button
-  - [ ] Update cart state in real time
+  - [x] Create Cart component
+    - [x] Display all items in the cart
+    - [x] Show quantities, individual price, total price
+    - [x] Allow increment/decrement of quantities
+    - [x] Allow removing individual items
+    - [x] Add "Clear Cart" button
+  - [x] Update cart state in real time
 
-- [ ] **State Management**
+- [x] **State Management**
 
-  - [ ] Set up global state using useReducer / context API
-  - [ ] Handle adding/removing items and quantity changes
-  - [ ] Persist cart state across page navigation
+  - [x] Set up global state using useReducer / context API
+  - [x] Handle adding/removing items and quantity changes
+  - [x] Persist cart state across page navigation
 
 - [ ] **Styling**
 
-  - [ ] Create CSS Modules for components
-  - [ ] Apply custom fonts (Inter / Rubik) via global.css
-  - [ ] Style navigation bar, buttons, product cards, and cart
-  - [ ] Add responsive styles for desktop and mobile
+  - [x] Create CSS Modules for components
+  - [x] Apply custom fonts (Inter / Rubik) via global.css
+  - [x] Style navigation bar, buttons, product cards, and cart
+  - [x] Add responsive styles for desktop and mobile
 
 - [ ] **User Feedback & UX**
 
-  - [ ] Show loading spinner while fetching products
-  - [ ] Show error message if API fails
-  - [ ] Show confirmation/visual feedback when adding to cart
+  - [x] Show loading spinner while fetching products
+  - [x] Show error message if API fails
+  - [x] Show confirmation/visual feedback when adding to cart
 
 - [ ] **Testing & Optimization**
   - [ ] Test navigation between pages
