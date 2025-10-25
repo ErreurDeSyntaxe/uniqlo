@@ -5,7 +5,9 @@ function Header() {
   return (
     <>
       <NavBar />
-      <h1 className={styles.header}>Uniqlo — The Unique Brand</h1>
+      <h1 className={styles.header}>
+        Uniqlo — The <span>Unique</span> Brand
+      </h1>
     </>
   );
 }

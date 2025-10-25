@@ -1,5 +1,17 @@
 .header {
-  background-color: red;
+  padding: 1.25rem 1rem;
+
+  background-color: #134686;
+  color: #fdf4e3;
+
   text-align: center;
-  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.header span {
+  color: #feb21a;
 }
