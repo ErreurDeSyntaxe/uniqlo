@@ -1,7 +1,11 @@
+import { useState } from 'react';
+import { useStore } from '../contexts/storeReducer';
 import styles from './ProductCard.module.css';
 
 function ProductCard({ product }) {
-  const { title, price, image, rating } = product;
+  const [quantity, setQuantity] = useState(1);
+  const { dispatch } = useStore();
+  const { id, title, price, image, rating } = product;
 
   return (
     <div className={styles.card}>
@@ -13,15 +17,36 @@ function ProductCard({ product }) {
           ⭐ {rating.rate} ({rating.count})
         </p>
         <div className={styles.actions}>
-          <button className={styles.decrement}>-</button>
+          <button
+            className={styles.decrement}
+            onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+          >
+            -
+          </button>
           <input
             type="number"
-            defaultValue={1}
             min={1}
             className={styles.qty}
+            value={quantity}
+            onChange={(e) => setQuantity(e.target.value)}
           />
-          <button className={styles.increment}>+</button>
-          <button className={styles.add}>Add to Cart</button>
+          <button
+            className={styles.increment}
+            onClick={() => setQuantity((q) => q + 1)}
+          >
+            +
+          </button>
+          <button
+            className={styles.add}
+            onClick={() =>
+              dispatch({
+                type: 'cart/addItem',
+                payload: { id, quantity: quantity },
+              })
+            }
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
