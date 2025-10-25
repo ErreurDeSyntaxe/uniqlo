@@ -34,3 +34,23 @@
 .navList li a:hover {
   color: #feb21a;
 }
+
+@media (max-width: 768px) {
+  .navList {
+    gap: 2rem;
+  }
+
+  .navList li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navList {
+    gap: 1.5rem;
+  }
+
+  .navList li a {
+    font-size: 1.6rem;
+  }
+}

@@ -103,3 +103,21 @@
 .add:hover {
   background-color: #e5a017;
 }
+
+@media (max-width: 768px) {
+  .card {
+    width: 220px;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

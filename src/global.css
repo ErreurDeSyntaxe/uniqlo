@@ -37,7 +37,20 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; /* 10px base font size */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%; /* 9px base */
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 50%; /* 8px base */
+  }
 }
 
 #root {

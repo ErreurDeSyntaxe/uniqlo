@@ -15,3 +15,17 @@
 .header span {
   color: #feb21a;
 }
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.8rem;
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 1.6rem;
+    padding: 0.75rem 0.5rem;
+  }
+}
