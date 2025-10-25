@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 const TWELVE_SECONDS = 1000 * 12;
 const favicons = [
   './public/shirt.svg',
@@ -12,18 +10,14 @@ const favicons = [
   './public/sock.svg',
 ];
 
-export default function useFavicon() {
-  const [favicon, setFavicon] = useState(0);
+export default function changeFavicon() {
+  let favicon = 0;
 
-  useEffect(() => {
-    const id = setInterval(() => {
-      if (favicon < favicons.length - 1) setFavicon((f) => f + 1);
-      else setFavicon(0);
-    }, TWELVE_SECONDS);
+  setInterval(() => {
+    if (favicon < favicons.length - 1) favicon++;
+    else favicon = 0;
 
-    return () => clearInterval(id);
-  }, [favicon]);
-
-  const faviconEl = document.querySelector("link[rel~='icon']");
-  faviconEl.href = favicons[favicon];
+    const faviconEl = document.querySelector("link[rel~='icon']");
+    faviconEl.href = favicons[favicon];
+  }, TWELVE_SECONDS);
 }
