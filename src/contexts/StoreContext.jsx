@@ -10,10 +10,14 @@ function StoreProvider({ children }) {
 
   useEffect(() => {
     async function fetching() {
-      dispatch({ type: 'loading', payload: null });
-      const data = await fetchData();
-      console.log(data);
-      dispatch({ type: 'ready', payload: data });
+      try {
+        dispatch({ type: 'loading', payload: null });
+        const data = await fetchData();
+        dispatch({ type: 'ready', payload: data });
+      } catch (err) {
+        console.log(err);
+        dispatch({ type: 'error', payload: null });
+      }
     }
     fetching();
   }, [dispatch]);
