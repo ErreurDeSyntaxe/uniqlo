@@ -1,12 +1,32 @@
 .nav {
-  background-color: yellow;
-  padding: 1rem;
+  background-color: #134686;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .navList {
   list-style: none;
-
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li a {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fdf4e3;
+
+  transition: color 0.3s ease;
+}
+
+.navList li a:hover {
+  color: #feb21a;
 }

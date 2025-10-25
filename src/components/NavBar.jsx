@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import Icon from './Icon';
 import styles from './NavBar.module.css';
 
@@ -8,17 +8,20 @@ function NavBar() {
       <ul className={styles.navList}>
         <li>
           <Link to="/">
-            <Icon icon={'home'} alt={'Home icon'} />
+            <Icon icon="home" alt="Home icon" />
+            Home
           </Link>
         </li>
         <li>
           <Link to="/shopping">
-            <Icon icon={'shopping'} alt={'Shopping icon'} />
+            <Icon icon="shopping" alt="Shopping icon" />
+            Shop
           </Link>
         </li>
         <li>
           <Link to="/cart">
-            <Icon icon={'cartEmpty'} alt={'Cart icon'} />
+            <Icon icon="cartEmpty" alt="Cart icon" />
+            Cart
           </Link>
         </li>
       </ul>
