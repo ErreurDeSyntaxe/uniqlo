@@ -1,3 +1,175 @@
-.cart {
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 900px;
+  color: #0f386b;
+
   flex: 1;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #134686;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem;
+  background-color: #fdf4e3;
+  border: 1px solid #e4dccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #fefaf1;
+  border-radius: 8px;
+}
+
+.details {
+  flex: 1;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f386b;
+  margin-bottom: 0.3rem;
+}
+
+.price {
+  color: #ed3f27;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn {
+  background-color: #f69f93;
+  color: white;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ef523d;
+}
+
+.qty {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #134686;
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: #ed3f27;
+  font-weight: 600;
+  margin-left: 1rem;
+
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.remove:hover {
+  color: #b8230f;
+}
+
+.summary {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e4dccc;
+  text-align: right;
+}
+
+.totalLabel {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f386b;
+}
+
+.totalValue {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ed3f27;
+  margin-bottom: 1rem;
+}
+
+.checkout {
+  background-color: #feb21a;
+  color: white;
+
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkout:hover {
+  background-color: #e5a017;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.clear {
+  background-color: #f69f93;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear:hover {
+  background-color: #ef523d;
 }

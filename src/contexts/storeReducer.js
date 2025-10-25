@@ -38,18 +38,41 @@ function reducer(state, { type, payload }) {
     case 'cart/removeItem':
       return {
         ...state,
-        cart: state.cart.filter((item) => item.id !== payload.id),
+        cart: state.cart.filter((item) => item.id !== payload),
       };
 
-    case 'cart/incrementItem':
+    case 'cart/increment':
       return {
         ...state,
         cart: state.cart.map((item) => {
-          if (item.id === payload.id)
-            return { ...item, quanity: item.quanity + 1 };
+          if (item.id === payload) {
+            console.log(typeof item.quantity);
+            return { ...item, quantity: item.quantity + 1 };
+          }
           return item;
         }),
       };
+
+    case 'cart/decrement':
+      return {
+        ...state,
+        cart: state.cart
+          .map((item) =>
+            item.id === payload
+              ? { ...item, quantity: item.quantity - 1 }
+              : item
+          )
+          .filter((item) => item.quantity > 0),
+      };
+
+    case 'cart/clear':
+      return {
+        ...state,
+        cart: [],
+      };
+
+    case 'error':
+      return { ...state, status: 'error' };
 
     default:
       return state;
