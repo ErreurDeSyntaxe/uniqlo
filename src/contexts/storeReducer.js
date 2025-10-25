@@ -7,16 +7,16 @@ const initialState = {
   status: 'ready',
 };
 
-function reducer(state, action) {
-  switch (action.type) {
+function reducer(state, { type, payload }) {
+  switch (type) {
     case 'loading':
       return { ...state, status: 'loading' };
 
     case 'ready':
-      return { ...state, status: 'ready', products: action.products };
+      return { ...state, status: 'ready', products: payload };
 
     default:
-      break;
+      return state;
   }
 }
 
