@@ -14,7 +14,7 @@ A Single Page Application for a fake clothing store.
 
 ### 🌐 Live Demo
 
-[Visit Project](http://google.com/)
+[Uniqlo Fake Store](https://erreurdesyntaxe.github.io/uniqlo/)
 
 ### 🎯 Objective
 
@@ -136,21 +136,20 @@ This section serves as both a checklist and roadmap.
 #### 🚀 Deployment (Git + GitHub Pages)
 
 - [x] `npm install --save-dev gh-pages`
-- [x] Add `"homepage": "https://erreurdesyntaxe.github.io/uniqlo/"`
-- [x] Add `"deploy": "gh-pages -d dist"`
-- [ ] `npm run build`
-- [ ] Commit all changes on main
-- [ ] `npm run deploy`
+- [x] Add `"homepage": "https://erreurdesyntaxe.github.io/uniqlo/"` script
+- [x] Add `"deploy": "gh-pages -d dist"` script
+- [x] Add `base: '/<repo>/'` to vite.config.js
+- [x] Add basename to BrowserRouter
+- [x] `npm run build`
+- [x] Commit all changes on main
+- [x] `npm run deploy`
 
 #### 🪞 Final Review
 
-- [ ] Update Live Page Link
-- [ ] Update Project Preview Image
-- [ ] Confirm Built With section
-- [ ] Add Reflection
-- [ ] Remove User Stories
-- [ ] Remove Flowchart
-- [ ] Remove Development
+- [x] Update Live Page Link
+- [x] Update Project Preview Image
+- [x] Confirm Built With section
+- [x] Add Reflection
 
 ---
 
@@ -294,3 +293,7 @@ Navigation Flow
 | ----------------------------------------------------------- |
 | Total: $109.97 [Clear Cart]
 ```
+
+## 🧠 Reflexion
+
+Vite’s SVG handling can be tricky. It was simpler to edit the SVG files directly than to style them via CSS imports. Another hiccup was with the favicon SVGs. They must be referenced from the /uniqlo/ path (the project’s root) to avoid 404s.
