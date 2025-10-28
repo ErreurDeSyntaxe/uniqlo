@@ -20,7 +20,7 @@ function App() {
         ],
       },
     ],
-    { basename: '/uniqlo/' }
+    { basename: '/' }
   );
 
   return <RouterProvider router={router} />;
