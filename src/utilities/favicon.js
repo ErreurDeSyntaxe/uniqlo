@@ -1,13 +1,13 @@
 const TWELVE_SECONDS = 1000 * 12;
 const favicons = [
-  './public/shirt.svg',
-  './public/dress.svg',
-  './public/beanie.svg',
-  './public/belt.svg',
-  './public/high-heel.svg',
-  './public/pants.svg',
-  './public/sneaker.svg',
-  './public/sock.svg',
+  '/shirt.svg',
+  '/dress.svg',
+  '/beanie.svg',
+  '/belt.svg',
+  '/high-heel.svg',
+  '/pants.svg',
+  '/sneaker.svg',
+  '/sock.svg',
 ];
 
 export default function changeFavicon() {
