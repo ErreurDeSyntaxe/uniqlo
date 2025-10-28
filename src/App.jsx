@@ -8,17 +8,20 @@ import Home from './pages/Home';
 import Cart from './pages/Cart';
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: '/shopping', element: <Shopping /> },
-        { path: '/cart', element: <Cart /> },
-      ],
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: '/',
+        element: <Layout />,
+        children: [
+          { index: true, element: <Home /> },
+          { path: 'shopping', element: <Shopping /> },
+          { path: 'cart', element: <Cart /> },
+        ],
+      },
+    ],
+    { basename: '/uniqlo/' }
+  );
 
   return <RouterProvider router={router} />;
 }
