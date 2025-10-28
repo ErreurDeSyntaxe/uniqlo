@@ -1,23 +1,39 @@
-import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-
+import { describe, it, expect } from 'vitest';
+import { StoreProvider } from './contexts/StoreContext';
 import App from './App';
 
+// Helper to render with context provider
+function renderApp() {
+  return render(
+    <StoreProvider>
+      <App />
+    </StoreProvider>
+  );
+}
+
 describe('App component', () => {
-  it('renders "Magnificient Monkeys"', () => {
-    const { container } = render(<App />);
-    expect(container).toMatchSnapshot();
+  it('renders a nav bar', async () => {
+    renderApp();
+    expect(await screen.findByRole('navigation')).toBeInTheDocument();
   });
 
-  it('renders "Radical Rhinos" after button click', async () => {
-    const user = userEvent.setup();
+  it('renders a heading with the brand name', async () => {
+    renderApp();
+    expect(
+      await screen.findByRole('heading', { name: /uniqlo/i })
+    ).toBeInTheDocument();
+  });
 
-    render(<App />);
-    const button = screen.getByRole('button', { name: 'Click Me' });
+  it('renders a spinner while fetching data', async () => {
+    renderApp();
+    expect(
+      await screen.findByLabelText(/loading spinner/i)
+    ).toBeInTheDocument();
+  });
 
-    await user.click(button);
-
-    expect(screen.getByRole('heading').textContent).toMatch(/radical rhinos/i);
+  it('renders a footer', async () => {
+    renderApp();
+    expect(await screen.findByText(/erreur de syntaxe/i)).toBeInTheDocument();
   });
 });

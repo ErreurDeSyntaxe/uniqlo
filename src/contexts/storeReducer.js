@@ -4,7 +4,7 @@ import { StoreContext } from './StoreContext';
 const initialState = {
   products: [],
   cart: [],
-  status: 'ready',
+  status: 'loading',
 };
 
 function reducer(state, { type, payload }) {
