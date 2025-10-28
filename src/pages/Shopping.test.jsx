@@ -83,4 +83,28 @@ describe('Shopping page', () => {
       })
     );
   });
+
+  it('filters products based on search input', () => {
+    const extraProducts = [
+      ...mockProducts,
+      {
+        id: 2,
+        title: 'Jeans',
+        price: 49.99,
+        image: 'jeans.jpg',
+        rating: { rate: 4.0, count: 50 },
+      },
+    ];
+
+    renderWithStore({ products: extraProducts });
+
+    expect(screen.getByText(/t-shirt/i)).toBeInTheDocument();
+    expect(screen.getByText(/jeans/i)).toBeInTheDocument();
+
+    const searchInput = screen.getByPlaceholderText(/search products/i);
+    fireEvent.change(searchInput, { target: { value: 'shirt' } });
+
+    expect(screen.getByText(/t-shirt/i)).toBeInTheDocument();
+    expect(screen.queryByText(/jeans/i)).not.toBeInTheDocument();
+  });
 });

@@ -45,7 +45,7 @@
 .price {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #ed3f27;
+  color: #772014;
 }
 
 .rating {
@@ -88,7 +88,7 @@
 }
 
 .add {
-  background-color: #feb21a;
+  background-color: #b27d12;
   color: white;
   border: none;
   border-radius: 5px;
@@ -101,7 +101,7 @@
 }
 
 .add:hover {
-  background-color: #e5a017;
+  background-color: #7f590d;
 }
 
 @media (max-width: 768px) {
