@@ -113,35 +113,34 @@ This section serves as both a checklist and roadmap.
   - [x] Handle adding/removing items and quantity changes
   - [x] Persist cart state across page navigation
 
-- [ ] **Styling**
+- [x] **Styling**
 
   - [x] Create CSS Modules for components
   - [x] Apply custom fonts (Inter / Rubik) via global.css
   - [x] Style navigation bar, buttons, product cards, and cart
   - [x] Add responsive styles for desktop and mobile
 
-- [ ] **User Feedback & UX**
+- [x] **User Feedback & UX**
 
   - [x] Show loading spinner while fetching products
   - [x] Show error message if API fails
   - [x] Show confirmation/visual feedback when adding to cart
 
-- [ ] **Testing & Optimization**
-  - [ ] Test navigation between pages
-  - [ ] Test cart functionality (add, remove, clear, update quantities)
-  - [ ] Test search functionality
-  - [ ] Check mobile responsiveness
-  - [ ] Run basic accessibility checks
+- [x] **Testing & Optimization**
+  - [x] Test navigation between pages
+  - [x] Test cart functionality (add, remove, clear, update quantities)
+  - [x] Test search functionality
+  - [x] Check mobile responsiveness
+  - [x] Run basic accessibility checks
 
 #### 🚀 Deployment (Git + GitHub Pages)
 
-- [ ] `git branch gh-pages` _(once)_
-- [ ] Commit everything
-- [ ] `git checkout gh-pages && git merge main --no-edit`
-- [ ] `npx webpack`
-- [ ] `git add dist -f && git commit -m "Deployment commit"`
-- [ ] `git subtree push --prefix dist origin gh-pages`
-- [ ] `git checkout main`
+- [x] `npm install --save-dev gh-pages`
+- [x] Add `"homepage": "https://erreurdesyntaxe.github.io/uniqlo/"`
+- [x] Add `"deploy": "gh-pages -d dist"`
+- [ ] `npm run build`
+- [ ] Commit all changes on main
+- [ ] `npm run deploy`
 
 #### 🪞 Final Review
 
