@@ -34,11 +34,17 @@ function ProductCard({ product }) {
           >
             -
           </button>
+          <label htmlFor="quantity" className="sr-only">
+            Quantity
+          </label>
           <input
+            id="quantity"
+            name="quantity"
             type="number"
             min={1}
             className={styles.qty}
             value={quantity}
+            aria-label="Quantity"
             onChange={(e) => setQuantity(e.target.value)}
           />
           <button

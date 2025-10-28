@@ -10,7 +10,7 @@ function Shopping() {
 
   return (
     <div className={styles.container}>
-      <h1>Shop</h1>
+      <h2>Shop</h2>
 
       <input
         type="text"

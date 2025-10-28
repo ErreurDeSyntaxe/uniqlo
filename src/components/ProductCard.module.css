@@ -64,7 +64,7 @@
 .decrement,
 .increment {
   background-color: #f69f93;
-  color: white;
+  color: #fff;
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
@@ -88,8 +88,8 @@
 }
 
 .add {
-  background-color: #b27d12;
-  color: white;
+  background-color: #0a2343;
+  color: #fff;
   border: none;
   border-radius: 5px;
   padding: 0.5rem;
@@ -97,11 +97,12 @@
 
   flex: 1;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 220ms ease;
 }
 
 .add:hover {
-  background-color: #7f590d;
+  background-color: #0f386b;
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

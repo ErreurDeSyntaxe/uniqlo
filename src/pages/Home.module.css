@@ -55,17 +55,21 @@
 }
 
 .homeBtn {
-  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #feb21a;
+
+  margin-top: 1rem;
   padding: 0.75rem 2rem;
-  font-size: 1.5rem;
   border-radius: 8px;
   background-color: #134686;
-  color: #fdf4e3;
-  text-decoration: none;
-  transition: all 0.3s ease;
+
+  display: inline-block;
+  transition: all 300ms ease;
 }
 
 .homeBtn:hover {
   background-color: #feb21a;
-  color: #7f590d;
+  color: #134686;
 }
