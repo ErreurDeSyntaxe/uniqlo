@@ -1,8 +1,11 @@
 import { useStore } from '../contexts/storeReducer';
 import styles from './Cart.module.css';
+import Toast from '../components/Toast';
+import { useState } from 'react';
 
 function Cart() {
   const { cart, products, dispatch } = useStore();
+  const [toast, setToast] = useState('');
 
   const getProduct = (id) => products.find((p) => p.id === id);
   const total = cart.reduce((sum, item) => {
@@ -74,7 +77,15 @@ function Cart() {
             <p className={styles.totalValue}>${total.toFixed(2)}</p>
 
             <div className={styles.actions}>
-              <button className={styles.checkout}>Proceed to Checkout</button>
+              <button
+                className={styles.checkout}
+                onClick={() => {
+                  setToast(`It's not a real store!`);
+                  setTimeout(() => setToast(''), 3000); // clear toast after 3s
+                }}
+              >
+                Proceed to Checkout
+              </button>
               <button
                 className={styles.clear}
                 onClick={() => dispatch({ type: 'cart/clear' })}
@@ -85,6 +96,7 @@ function Cart() {
           </div>
         </>
       )}
+      {toast && <Toast message={toast} />}
     </div>
   );
 }
