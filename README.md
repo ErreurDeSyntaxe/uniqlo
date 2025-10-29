@@ -14,7 +14,8 @@ A Single Page Application for a fake clothing store.
 
 ### 🌐 Live Demo
 
-[Uniqlo Fake Store](https://erreurdesyntaxe.github.io/uniqlo/)
+[Uniqlo Fake Store (GitHub)](https://erreurdesyntaxe.github.io/uniqlo/)
+[Uniqlo Fake Store (Netlify)](https://uniqlo-fakestore.netlify.app/)
 
 ### 🎯 Objective
 
